@@ -1,0 +1,148 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.form-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--keppel-800);
+}
+
+.form-container {
+  background: var(--keppel-200);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.form-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.form-container label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--keppel-900);
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.form-container .input {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-container .error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.form-container .submit {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #00d1dd;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-container .submit:hover {
+  background-color: #007178;
+}
+
+.form-container .submit:disabled{
+  cursor: not-allowed;
+}
+
+.selector-types{
+  background-color: #fff;
+  padding: 5px;
+  width: 150px;
+  display: none;
+}
+
+.select-types{
+  width: 100%;
+  background-color: #fff;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.select-types:hover .selector-types{
+  display: block;
+  position: absolute;
+  margin-top: 2px;
+  left: 551px;
+  width: 249px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.type-checkbox:hover{
+  background-color: var(--keppel-100);
+}
+
+.select-placeholder{
+  color: #6b6868;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--keppel-300);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:hover{
+  background-color: #e6dfdf;
+}

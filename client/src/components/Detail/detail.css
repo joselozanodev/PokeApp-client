@@ -1,0 +1,208 @@
+
+.background-detail{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/01c1cad6-a54c-430a-a91c-d330b68403df/da5ucbm-78018326-2f14-452d-a8f3-4bc7fc0acb37.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAxYzFjYWQ2LWE1NGMtNDMwYS1hOTFjLWQzMzBiNjg0MDNkZlwvZGE1dWNibS03ODAxODMyNi0yZjE0LTQ1MmQtYThmMy00YmM3ZmMwYWNiMzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gZQb5m-qKUQYPDJEkDa9HG2Yeh-xnuYMsTCArk7J6X4');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: center center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+}
+
+
+.detail-container{
+    position: relative;
+    padding: 10px;
+    top: 40px;
+    width: 45vw;
+    max-width: 50vw;
+    background-image: linear-gradient(to right, var(--keppel-400), var(--keppel-500));
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.pokemon-name{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 10rem;
+}
+
+.pokemon-image{
+    width: 300px;
+    height: 300px;
+}
+
+.pokemon-types{
+    display: flex;
+    gap: 10px;
+}
+
+.created-stats{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+}
+
+.stat-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: var(--keppel-100);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pokemon-abilities{
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.pokemon-type{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    color: var(--keppel-100);
+}
+
+.pokemon-height{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    color: var(--keppel-100);
+}
+
+.pokemon-weight{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    color: var(--keppel-100);
+}
+
+.pokemon-stat{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0px 4px 0px 4px;
+    color: var(--keppel-100);
+}
+
+.pokemon-ability{
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 4px;
+    color: var(--keppel-100);
+}
+
+.hp{
+    position: absolute ;
+    top: -21px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.attack{
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    border-radius: 0px 0px 4px 0px;
+}
+
+.speed{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    border-radius: 0px 4px 4px 0px;
+}
+.defense{
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    border-radius: 0px 4px 4px 0px;
+}
+.special-attack{
+    position: absolute;
+    top: 240px;
+    right: 0px;
+    border-radius: 4px 0px 0px 4px;
+}
+.special-defense{
+    position: absolute;
+    top: 240px;
+    left: 0px;
+    border-radius: 4px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+.pokemon-height{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.pokemon-weight{
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.delete-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 4px;
+    background-color: var(--keppel-100);
+    color: var(--keppel-500);
+    border: none;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-btn:hover{
+    background-color: var(--keppel-700);
+    color: var(--keppel-100);
+}
+
+.update-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 4px;
+    background-color: var(--keppel-100);
+    color: var(--keppel-500);
+    border: none;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.update-btn:hover{
+    background-color: var(--keppel-700);
+    color: var(--keppel-100);
+}

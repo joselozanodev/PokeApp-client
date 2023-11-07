@@ -1,0 +1,99 @@
+
+.nav-container{
+    display: flex;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--keppel-400);
+    width: 100vw;
+    height: 12vh;
+    border-radius: 0 0 5px 5px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#nav-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--keppel-950);
+    margin-left: 2vw;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 30vw;
+    margin-right: 2vw;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: var(--keppel-900);  
+    transition: 0.3s ease;
+}
+
+.link:hover{
+    color: var(--keppel-950);
+}
+
+.link:active{
+    color: var(--keppel-900);
+}
+
+.searchBar{
+    position: relative;
+    right: 10px;
+}
+
+.searchBar input{
+    width: 250px;
+    height: 26px;
+    border-radius: 3px 0px 0px 3px;
+    border: 1px solid var(--keppel-700);
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.searchBar input:focus{
+    outline: none;
+}
+
+.searchBar button {
+    position: relative;
+    top: 4px;
+    width: 50px;
+    height: 30px;
+    border-radius: 0px 3px 3px 0px;
+    border: 1px solid var(--keppel-700);
+    background-color: var(--keppel-600);
+    color: var(--turquoise);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-svg{
+    margin-bottom: 1px;
+}
+
+.searchBar button:hover{
+    background-color: var(--keppel-700);
+}
+
+.searchBar button:active{
+    background-color: var(--keppel-600);
+}
+
+.pokeapp-landing{
+    text-decoration: none;
+}

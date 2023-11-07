@@ -1,0 +1,66 @@
+.error-container{
+    background-color: var(--keppel-600);
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-image{
+    width: 115px;
+    position: absolute;
+    top: 32%;
+}
+
+.title-container{
+    position: absolute;
+    top: 12%;
+    display: flex;
+    gap: 130px;
+}
+
+.error-title{
+    font-size: 130px;
+}
+
+.error-message{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 230px;
+}
+
+.error-link button{
+    position: absolute;
+    left: 43%;
+    bottom: 100px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: var(--keppel-100);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--keppel-900);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.error-link button:hover{
+    background-color: var(--keppel-800);
+}
+
+.error-link button:active{
+    background-color: var(--keppel-900);
+    transform: scale(0.98);
+}
+
+.pikachu-running{
+    position: absolute;
+    bottom: 150px;
+    width: 100px;
+    z-index: 100;
+}

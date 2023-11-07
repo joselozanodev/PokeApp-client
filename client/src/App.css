@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.loading-container{
+    background-color: var(--keppel-500);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolut
+}
+
+.loading-image{
+    width: 150px;
+    position: absolute;
+    top: 40%;
+}
+
+.loading-title{
+    text-transform: uppercase;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 60%;
+}

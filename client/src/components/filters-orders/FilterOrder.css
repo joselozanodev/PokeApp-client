@@ -1,0 +1,127 @@
+.filter-container {
+    position: absolute;
+    width: 550px;
+    height: 70px;
+    gap: 20px;
+    left: 32%;
+    top: 187px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filter-container:hover {
+    overflow-x: scroll;
+  }
+  
+  #filter {
+    display: flex;
+    flex-direction: row;
+    text-wrap: nowrap;
+    gap: 30px;
+    width: 0px;
+  }
+  
+  #filter li {
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #filter li:hover {
+    background-color: var(--keppel-300);
+    border-radius: 2px;
+  }
+  
+  #filter li.active {
+    background-color: var(--keppel-500);
+    color: var(--keppel-100);
+    border-radius: 2px;
+  }
+  
+  #order {
+    position: absolute;
+    top: 130px;
+    right: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 160px;
+    background-color: var(--keppel-200);
+    border-radius: 2px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #order li {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #order li:hover {
+    background-color: var(--keppel-300);
+    border-radius: 2px;
+  }
+  
+  #order li.active {
+    background-color: var(--keppel-500);
+    color: var(--keppel-100);
+    border-radius: 2px;
+  }
+  
+  .order-list {
+    background-color: var(--keppel-50);
+    width: 160px;
+    border-radius: 0px 0px 2px 2px;
+    display: none;
+  }
+  
+  #order:hover .order-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 57px;
+  }
+  
+  #ul-order {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .dropdown-arrow {
+    width: 15px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+  }
+  
+  #order:hover {
+    background-color: var(--keppel-300);
+    cursor: pointer;
+  }
+  
+  #order .dropdown-arrow {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #order:hover .dropdown-arrow {
+    transform: rotate(90deg);
+  }
+  
+  .filter-container::-webkit-scrollbar {
+    height: 7px;
+  }
+  
+  .filter-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 8px;
+    width: 5px;
+  }
+  
+  .filter-container::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  

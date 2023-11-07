@@ -3,7 +3,7 @@ import "./home.css";
 import { useSelector } from "react-redux";
 import FilterOrder from "../filters-orders/FilterOrder";
 import Pagination from "../Pagination/Pagination";
-import Cards from "../cards/cards";
+import Cards from "../cards/Cards";
 
 const Home = () => {
   const pokemons = useSelector((state) => state.pokemon.pokedex);

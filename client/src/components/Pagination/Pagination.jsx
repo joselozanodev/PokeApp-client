@@ -1,5 +1,5 @@
 import React from "react";
-import "./pagination.css";
+import "./Pagination.css";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentPage } from "../../redux/pokemonSlice";
 

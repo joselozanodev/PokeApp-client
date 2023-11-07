@@ -1,6 +1,6 @@
 import { useDispatch, useSelector} from "react-redux";
 import { setOrder, setFilter, setCurrentPage } from "../../redux/pokemonSlice";
-import "./filterOrder.css";
+import "./FilterOrder.css";
 
 function FilterOrder() {
     const dispatch = useDispatch();

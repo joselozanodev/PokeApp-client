@@ -22,7 +22,7 @@ const Detail = () => {
   const handleDelete = async(event)=>{
     event.preventDefault();
     try {
-      const { data } = await axios.delete(`http://localhost:3001/pokemon/${pokemonName}`);
+      const { data } = await axios.delete(`https://pokeapp-server-production.up.railway.app/pokemon/${pokemonName}`);
       if(data === 'Pokemon Deleted Successfully'){
         dispatch(removePokemon(pokemonName))
         dispatch(setCurrentPage(1));
@@ -42,12 +42,12 @@ const Detail = () => {
    useEffect(() => {
     async function fetchData() {
       if(typeof id === 'string' && !id.includes('-')){
-        const response = await axios.get(`http://localhost:3001/pokemon/search?name=${id}`);
+        const response = await axios.get(`https://pokeapp-server-production.up.railway.app/pokemon/search?name=${id}`);
         setPokeDetail(response.data);
         setTypes(pokemonTypesByName);
         return;
       }
-      const response = await axios.get(`http://localhost:3001/pokemon/${id}`);
+      const response = await axios.get(`https://pokeapp-server-production.up.railway.app/pokemon/${id}`);
       setPokeDetail(response.data);
       setTypes(pokemon?.pokemonTypes);
     }

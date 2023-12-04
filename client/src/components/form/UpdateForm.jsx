@@ -72,7 +72,7 @@ const UpdateForm = () => {
       pokemonCreated: true,
     }
     try {
-      const response = await axios.put(`http://localhost:3001/pokemon/${params?.name}`, pokemon)
+      const response = await axios.put(`https://pokeapp-server-production.up.railway.app/pokemon/${params?.name}`, pokemon)
       if(response){
         dispatch(setCurrentPage(1))
         alert('Pokemon updated successfully')

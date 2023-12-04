@@ -17,7 +17,7 @@ const NavBar = () => {
         const pokeName = name.toLowerCase();
         try {
           const response = await axios(
-            `http://localhost:3001/pokemon/search?name=${pokeName}`
+            `https://pokeapp-server-production.up.railway.app/pokemon/search?name=${pokeName}`
           );
           navigate(`/detail/${response.data.id}`);
           dispatch(setPokemonSearch(allPokemons));

@@ -25,8 +25,8 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const responsePokemons = await axios.get("http://localhost:3001/pokemon");
-        const responseTypes = await axios.get("http://localhost:3001/types");
+        const responsePokemons = await axios.get("https://pokeapp-server-production.up.railway.app//pokemon");
+        const responseTypes = await axios.get("https://pokeapp-server-production.up.railway.app//types");
         if(types){
           dispatch(setTypes(responseTypes.data));
         }

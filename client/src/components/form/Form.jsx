@@ -88,7 +88,7 @@ const Form = () => {
         pokemonCreated: true,
       };
       const response = await axios.post(
-        "http://localhost:3001/pokemon",
+        "https://pokeapp-server-production.up.railway.app/pokemon",
         pokemon
       );
       if (response) {
